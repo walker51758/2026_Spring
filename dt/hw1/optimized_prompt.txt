@@ -1,0 +1,77 @@
+Based on the comprehensive error analysis, here is an optimized prompt for sentiment analysis:
+
+## **Optimized Prompt for Sentiment Analysis**
+
+**Primary Instruction:**
+Classify the sentiment of the following text as **Positive**, **Neutral**, or **Negative**. Apply these specific guidelines:
+
+**1. Financial/Business Context Rules:**
+- Treat standalone financial metrics (revenues, profits, margins, losses) as **NEUTRAL** unless accompanied by:
+  - Comparative language ("increased from," "fell short of," "beat expectations")
+  - Explicit evaluative words ("strong," "disappointing," "record high")
+  - Contextual benchmarks vs. previous periods or forecasts
+- Interpret reduced losses, cost synergies, and strategic refocusing as **POSITIVE** in business contexts
+- Consider high/sustained margins in commodity markets as **POSITIVE** for sellers
+- Treat corporate actions (joint ventures, expansions, profit distributions) as **NEUTRAL** when factually reported without evaluation
+
+**2. Sentiment Determination Framework:**
+- **Positive**: Contains explicit positive language OR describes favorable outcomes/improvements
+- **Neutral**: Factual statements without subjective evaluation OR mixed/balanced information
+- **Negative**: Contains explicit negative language OR describes unfavorable outcomes/declines
+
+**3. Key Decision Factors:**
+- Prioritize explicit emotional/evaluative language over implied sentiment
+- For factual business statements, require clear positive/negative framing beyond raw numbers
+- Consider domain context: operational readiness statements after scrutiny = positive; strategic refocusing = positive
+- When comparing numerical values, interpret improvement (smaller losses, higher margins) as positive
+
+**4. Examples for Reference:**
+- **Positive**: "Profit soared 50% above expectations to record levels"
+- **Neutral**: "Q4 revenue was $500M with an 8% operating margin"
+- **Negative**: "Losses deepened to $10M despite cost-cutting efforts"
+- **Positive**: "The reduced loss of $0.4M shows significant improvement from last quarter"
+- **Neutral**: "The board proposed a profit distribution of $0.92 per share"
+- **Positive**: "All safety systems are fully operational following the inspection"
+
+**Text to classify:** [INSERT TEXT HERE]
+
+---
+
+## **Explanation of Key Improvements**
+
+1. **Explicit Financial Data Handling**: Directly addresses the most common error pattern (interpreting raw numbers as positive) by requiring comparative or evaluative context for financial metrics.
+
+2. **Domain-Specific Rules**: Incorporates business/financial context understanding that:
+   - Reduced losses = positive
+   - Strategic refocusing = positive  
+   - High margins = positive (in commodity contexts)
+   - Operational readiness after scrutiny = positive
+
+3. **Clear Decision Hierarchy**: Establishes that explicit language trumps implied sentiment, preventing over-interpretation of neutral business facts.
+
+4. **Contrastive Examples**: Provides clear examples that demonstrate the distinction between similar-looking statements with different sentiment labels.
+
+5. **Three-Part Framework**: Separates rules by (1) context, (2) framework, (3) decision factors for systematic application.
+
+---
+
+## **Additional Instructions to Avoid Similar Errors**
+
+**For Implementation:**
+
+1. **Two-Step Classification Consideration**:
+   ```
+   Step 1: Is this primarily a factual business/financial statement?
+     - If YES: Apply financial context rules
+     - If NO: Proceed to general sentiment analysis
+   
+   Step 2: Does it contain explicit evaluative language?
+     - If YES: Classify based on that language
+     - If NO: Default to neutral unless domain rules apply
+   ```
+
+2. **Keyword Flagging System**: Implement automatic review triggers for:
+   - Financial metrics without comparative language
+   - Business expansion announcements without evaluative framing
+   - Technical/operational status reports
+   - Strategic business terms

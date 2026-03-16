@@ -1,0 +1,15 @@
+{
+  "original_accuracy": 0.8166666666666667,
+  "optimized_accuracy": 0.9333333333333333,
+  "improvement": 0.1166666666666667,
+  "original_distribution": {
+    "negative": 20,
+    "neutral": 20,
+    "positive": 20
+  },
+  "optimized_distribution": {
+    "positive": 22,
+    "negative": 20,
+    "neutral": 18
+  }
+}
