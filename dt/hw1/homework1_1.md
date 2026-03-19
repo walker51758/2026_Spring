@@ -17,3 +17,5 @@
 | [optimized_prompt.txt](optimized_prompt.txt)                 | 优化后的prompt                                     |
 
 - 最终准确率：93.33%（比原始提高11.67%）
+
+  ![image-20260317102347900](./../../../../Pictures/Screenshots/image-20260317102347900.png)
