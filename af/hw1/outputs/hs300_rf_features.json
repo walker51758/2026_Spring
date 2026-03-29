@@ -1,0 +1,44 @@
+{
+  "features": [
+    "roe",
+    "roa",
+    "gross_profit_margin",
+    "net_profit_margin",
+    "current_ratio",
+    "quick_ratio",
+    "debt_to_assets",
+    "asset_turnover",
+    "inventory_turnover",
+    "accounts_receivable_turnover",
+    "operating_cash_flow_to_current_liabilities",
+    "revenue_yoy",
+    "net_profit_yoy",
+    "total_asset_growth_rate",
+    "liquidity_gap",
+    "roe_to_leverage"
+  ],
+  "target_metric": "net_profit_yoy",
+  "index_code": "000300.XSHG",
+  "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "metrics": {
+    "accuracy": 0.72265625,
+    "precision": 0.6571428571428571,
+    "recall": 0.8,
+    "f1": 0.7215686274509804,
+    "roc_auc": 0.76490903484428
+  }
+}
